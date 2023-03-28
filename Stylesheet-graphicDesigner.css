@@ -1,0 +1,124 @@
+@import url(//db.onlinewebfonts.com/c/f542504fbea1d4c9a39763b79b0a2195?family=Argentum+Novus+Bold);
+.user-image {
+  position: relative;
+}
+header {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  text-align: center;
+  margin-left: 13em;
+  margin-right: 13em;
+  color: white;
+  padding-top: 2em;
+}
+
+.icon-name img,
+h2 {
+  float: left;
+}
+
+h2 {
+  margin-top: 0.5em;
+  padding-left: 0.5em;
+}
+nav {
+  margin-top: 1.15em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1.5em;
+}
+
+#buy {
+  background-color: transparent;
+  color: yellow;
+  border: 1px solid yellow;
+  /* rgb(178, 231, 73); */
+  border-radius: 40px;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.intro {
+  position: absolute;
+  top: 24em;
+  margin-left: 15em;
+  width: 38%;
+}
+#about-btn {
+  background-color: rgb(43, 43, 43);
+  color: white;
+  border-radius: 40px;
+  padding: 1.5em;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+.about {
+  background-color:  hsl(210, 100%, 48%);
+  color: white;
+  padding-left: 15em;
+  padding-right: 15em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  display: flex;
+ margin-top: -5px;
+  justify-content: space-between;
+}
+.about-section,
+.description-section {
+  flex: 50%;
+  max-width: 40%;
+}
+
+.description-section {
+  padding-top: 4.5em;
+  font-size: larger;
+  text-align: justify;
+}
+.portfolio {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 13em;
+  padding-right: 13em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  background-color: rgb(23, 125, 223);
+  color: white;
+}
+.portfolio img {
+  margin-top: 0.5em;
+  margin-left: 2em;
+}
+.portfolio1 {
+  flex: 30%;
+  max-width: 23%;
+}
+footer {
+  background-color:  hsl(210, 100%, 48%);
+  display: flex;
+
+  color: white;
+  padding-left: 15em;
+  padding-right: 15em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+#statement {
+  flex: 30%;
+  max-width: 25%;
+}
+#icons {
+  flex: 60%;
+  max-width: 60%;
+}
+footer i {
+  padding-left: 1em;
+}
