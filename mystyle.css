@@ -13,6 +13,7 @@ header {
   margin-right: 13em;
   color: white;
   padding-top: 2em;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .icon-name img,
@@ -50,6 +51,29 @@ nav a {
   margin-left: 15em;
   width: 38%;
 }
+.intro h3 {
+  color:white;
+  font-family: Dancing Script, cursive;
+  font-size: x-large;
+}
+.intro h1{
+ color: white;
+ font-size: 50px;
+ font-weight: 500;
+ font-family: 'Oxygen', sans-serif;
+}
+#graphic-designer{
+ color: white;
+ font-size: 30px;
+ font-weight: 300;
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#introduction{
+ color: #666; 
+ width: 85%; 
+ font-size: large;
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 #about-btn {
   background-color: rgb(43, 43, 43);
   color: white;
@@ -58,6 +82,7 @@ nav a {
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   
 }
 .about {
@@ -76,11 +101,23 @@ nav a {
   flex: 50%;
   max-width: 40%;
 }
+.about-section h3 {
+ font-family: Dancing Script, cursive; 
+ font-size: x-large";
+}
+.about-section h1 {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'Oxygen', sans-serif;
+}
 
 .description-section {
   padding-top: 4.5em;
   font-size: larger;
   text-align: justify;
+}
+.description-section p{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .portfolio {
   display: flex;
@@ -91,6 +128,7 @@ nav a {
   padding-bottom: 3em;
   background-color: rgb(23, 125, 223);
   color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .portfolio img {
   margin-top: 0.5em;
@@ -103,6 +141,7 @@ nav a {
 footer {
   background-color:  hsl(210, 100%, 48%);
   display: flex;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 
   color: white;
   padding-left: 15em;
@@ -121,4 +160,7 @@ footer {
 }
 footer i {
   padding-left: 1em;
+}
+footer i:hover{
+  color:#ddd;
 }
