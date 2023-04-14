@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Account of Ecommerce Website</title>
+        <link href="Red Store-Style.css" rel="stylesheet" />
+        <link href="Accounts.css" rel="stylesheet" />
+        <link href="myStyle.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+        <script src="https://kit.fontawesome.com/7f7b6f90d4.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class="head-section" id="products">
+            <header class="header pt-8 mx-auto" id="home">
+                <div class="flex justify-between mx-20">
+                    <div class="small-container">
+                        <img src="img/logo.png" class="w-24">
+                    </div>
+                    <button id="menu-btn" class="invisible md\:visible">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="navbar flex flex-row mr-3" id="menu" style="color:#555">
+                        <a href="Red Store using Tailwindcss.html" class="mx-4">Home</a>
+                        <a href="Products using Tailwind.html" class="mx-4">Products</a>
+                        <a href="#" class="mx-4">About</a>
+                        <a href="#" class="mx-4">Contact</a>
+                        <a href="#account" class="mx-4">Account</a>
+                        <a href="Cart using Tailwindcs.html" class="mx-4"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div id="account" class="accounts">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-2 grid-flow-col gap-4 justify-center">
+                    <div class="image">
+                        <img src="img/intro.png" class="w-10/12">
+                    </div>
+                    <div class="account-form w-64 mt-10 bg-white text-base px-3 shadow-lg relative ">
+                        <div class="form-btn font-bold text-center py-4">
+                            <span onclick="Login()" class="pr-4 text-gray-700 cursor-pointer">Login</span>
+                            <span onclick="Register()" class="text-gray-700 cursor-pointer" >Register</span>
+                            <hr id="indicator" class="translate-x-10" style="color:#ff523b;">
+                        </div>
+                        <form id="Login-Form" class="translate-x-0">
+                            <input type="text" placeholder="Username" class="px-6 py-4 mt-3 ">
+                            <input type="password" placeholder="Password" class="px-6 py-4 mt-3">
+                            <button class="text-center w-48 px-5 py-2 mt-4 btn">Login</button>
+                            <a href="#" class="mx-14">Forget Password</a>
+                        </form>
+                        <form id="Register-Form" class="translate-x-300 hidden">
+                            <input type="text" placeholder="Username" class="px-6 py-4 mt-4 ">
+                            <input type="email" placeholder="Email" class="px-6 py-4 mt-4">
+                            <input type="password" placeholder="Password" class="px-6 py-4 mt-4">
+                            <button class="text-center w-48 mt-4 px-5 py-2 btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer bg-black text-white px-10">
+            <footer class="container mx-auto justify-center">
+                <div class="grid grid-cols-4  ">
+                    <div class="foot1 w-3/4">
+                        <p><strong>Download our App</strong></p>
+                        
+                        Download App for Android and ios mobile phone.
+                        <div class="apps flex mt-3">
+                            <div class="play-store mr-1">
+                                <img src="img/play-store.png" class="w-24">
+                            </div>
+                            <div class="app-store">
+                                <img src="img/app-store.png" class="w-24">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="foot2 text-center w-3/4">
+                        <img src="img/logo.png"  class="w-32 mx-auto">
+                        <p>Our Purpose Is To Sustainably Make th Pleasure and Benefits of Sports Accessible to the Many.</p>
+                    </div>
+
+                    <div class="foot3 text-center w-3/4">
+                        <p class="text-2xl">Useful Links</p>
+                        <div class="flex flex-col">
+                            <a href="#">Coupons</a>
+                            <a href="#">Blog Posts</a>
+                            <a href="#">Returns Policy</a>
+                            <a href="#">Join Affiliate</a>
+
+                        </div>
+                    </div>
+
+                    <div class="foot4 text-center w-3/4 mb-6">
+                        <p class="text-2xl">Follow Us</p>
+                        <div class="flex flex-col">
+                            <a href="#">Facebook</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">Instagram</a>
+                            <a href="#">Youtube</a>
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <p class="text-center mt-6">Copyright 2020 - Rahul Kumar Sinha</p>
+            </footer>
+        </div>
+
+        <script>
+            const logginn = document.getElementById("Login-Form");
+            const Reggisterr = document.getElementById("Register-Form");
+        //  const indicatorr = documnet.getElementById("indicator");
+            function Login(){
+        //      indicatorr.style.transform = "translateX(10px)";
+                Reggisterr.style.transform = "translateX(300px)";
+                logginn.style.transform = "translateX(0px)";
+                Reggisterr.classList.add("hidden");
+                logginn.classList.remove("hidden");
+                
+            }
+
+            function Register(){
+                Reggisterr.style.transform = "translateX(0px)";
+                logginn.style.transform = "translateX(300px)";
+        //      indicatorr.style.transform = "translateX(60px)";
+                logginn.classList.add("hidden");
+                Reggisterr.classList.remove("hidden");  
+               
+            }
+        </script>
+    </body>
+</html>
